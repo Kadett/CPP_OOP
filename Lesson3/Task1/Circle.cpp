@@ -1,5 +1,7 @@
-//
-// Created by Evgeniy Onishchenko on 026 26.07.21.
-//
-
 #include "Circle.h"
+
+Circle::Circle(double radius): radius(radius) {}
+
+double Circle::area() {
+    return M_PI * radius * radius;
+}

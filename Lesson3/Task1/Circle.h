@@ -1,13 +1,10 @@
-//
-// Created by Evgeniy Onishchenko on 026 26.07.21.
-//
-
 #pragma once
+#include "Figure.h"
+#include <cmath>
 
-class Circle {
-
+class Circle : public Figure {
+    double radius;
+public:
+    explicit Circle(double radius);
+    double area() override;
 };
-
-
-
-
