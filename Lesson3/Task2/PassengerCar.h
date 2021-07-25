@@ -1,11 +1,10 @@
-//
-// Created by Evgeniy Onishchenko on 026 26.07.21.
-//
-
 #pragma once
-
-class PassengerCar {
-
+#include "Car.h"
+class PassengerCar : virtual public Car{
+public:
+    PassengerCar();
+    void setCompany(std::string) override ;
+    void setModel(std::string) override ;
 };
 
 
