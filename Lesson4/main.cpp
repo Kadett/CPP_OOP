@@ -4,7 +4,7 @@
 #include <set>
 #include <ctime>
 
-
+// Task 2
 void initVectorRandom(std::vector<int> &v, uint32_t max_number, size_t size) {
     srand(time(0));
     v.clear();
@@ -13,7 +13,7 @@ void initVectorRandom(std::vector<int> &v, uint32_t max_number, size_t size) {
         v.push_back(rand() % max_number);
     }
 }
-
+// Task 2
 int countUniqueNumbers(std::vector<int> &vector){
     std::set<int> s;
     for(auto &i : vector){
@@ -37,8 +37,15 @@ int main(){
     std::cout << std::endl;
     arr.sort();
     arr.print();
+    std::cout << std::endl << std::endl;
 
-    
+    // Task 2
+    std::vector<int> v{1, 1, 1, 2, 3, 4, 2, 3, 4, 5};
+    std::cout << "all numbers in vector = " << v.size() << std::endl;
+    std::cout << "unique numbers in vector = "<< countUniqueNumbers(v) << std::endl << std::endl;
+    initVectorRandom(v, 500, 1000);
+    std::cout << "all numbers in vector = " << v.size() << std::endl;
+    std::cout << "unique numbers in vector = "<< countUniqueNumbers(v) << std::endl;
 
 
 
