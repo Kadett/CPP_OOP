@@ -4,3 +4,4 @@
 #include "Task1/Circle.h"
 #include "Task1/Rhombus.h"
 #include "Task1/Square.h"
+#include "Task2/Minivan.h"

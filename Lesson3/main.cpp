@@ -13,5 +13,12 @@ int main(){
     std::cout << "The area of the rectangle = " << rectangle.area() << std::endl;
     std::cout << "\n\n";
 
+    // Task 2
+    std::cout << "Task 2:" << "\n";
+    Minivan minivan;
+    minivan.setCompany("Audi");
+    minivan.setModel("A6");
+    std::cout << "\n\n";
+
     return 0;
 }
