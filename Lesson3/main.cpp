@@ -20,5 +20,23 @@ int main(){
     minivan.setModel("A6");
     std::cout << "\n\n";
 
+    // Task 3
+    std::cout << "Task 3:" << "\n";
+    Fraction f1(1, 3);
+    Fraction f2(1, 5);
+
+    std::cout << f1.toString() << " + " << f2.toString()<<" = " << (f1 + f2).toString() << std::endl;
+    std::cout << f1.toString() << " - " << f2.toString()<<" = " << (f1 - f2).toString() << std::endl;
+    std::cout << f1.toString() << " * " << f2.toString()<<" = " << (f1 * f2).toString() << std::endl;
+    std::cout << f1.toString() << " / " << f2.toString()<<" = " << (f1 / f2).toString() << std::endl;
+    std::cout << "(" << f1.toString() << " == " << f2.toString()<<") - " << ((f1 == f2) ? "true" : "false") << std::endl;
+    std::cout <<  "(" << f1.toString() << " != " << f2.toString()<<") - " << ((f1 != f2) ? "true" : "false") << std::endl;
+    std::cout <<  "(" << f1.toString() << " < " << f2.toString()<<") - "  << ((f1 < f2) ? "true" : "false") << std::endl;
+    std::cout <<  "(" << f1.toString() << " >= " << f2.toString()<<") - "  << ((f1 >= f2) ? "true" : "false") << std::endl;
+    std::cout <<  "(" << f1.toString() << " > " << f2.toString()<<") - "  << ((f1 > f2) ? "true" : "false") << std::endl;
+    std::cout <<  "(" << f1.toString() << " <= " << f2.toString()<<") - "  << ((f1 <= f2) ? "true" : "false") << std::endl;
+
+
+
     return 0;
 }

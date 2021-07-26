@@ -5,3 +5,4 @@
 #include "Task1/Rhombus.h"
 #include "Task1/Square.h"
 #include "Task2/Minivan.h"
+#include "Task3/Fraction.h"
