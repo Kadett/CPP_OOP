@@ -9,6 +9,7 @@ class ArrayInt {
 public:
     ArrayInt();
     ArrayInt(int length);
+    ArrayInt(const std::initializer_list<int> &list);
     ~ArrayInt();
 
     void erase();

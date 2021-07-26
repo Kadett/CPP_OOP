@@ -10,6 +10,17 @@ ArrayInt::ArrayInt(int length) {
         m_data = nullptr;
 }
 
+ArrayInt::ArrayInt(const std::initializer_list<int> &list) : ArrayInt(list.size()) {
+    int count = 0;
+    for (auto &i : list)
+    {
+        m_data[count] = i;
+        ++count;
+    }
+    m_length = count;
+}
+
+
 ArrayInt::~ArrayInt() {
     delete[] m_data;
 }
@@ -80,7 +91,7 @@ void ArrayInt::pop_back() {
 }
 
 void ArrayInt::pop_front() {
-    if(m_length <= 0) return;
+    if (m_length <= 0) return;
     int *data = new int[m_length - 1];
     for (int i = 0; i < m_length; ++i) {
         data[i] = m_data[i + 1];
@@ -103,3 +114,4 @@ void ArrayInt::print() {
     }
     std::cout << " ]";
 }
+
