@@ -1,11 +1,15 @@
-//
-// Created by Evgeniy Onishchenko on 026 26.07.21.
-//
-
 #pragma once
 
-class Minivan {
+#include "Bus.h"
+#include "PassengerCar.h"
 
+class Minivan : public PassengerCar, public Bus {
+public:
+    Minivan();
+
+    void setCompany(std::string) override;
+
+    void setModel(std::string) override;
 };
 
 
