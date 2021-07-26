@@ -1,13 +1,8 @@
-//
-// Created by Evgeniy Onishchenko on 026 26.07.21.
-//
-
 #pragma once
-
-class Bus {
-
+#include "Car.h"
+class Bus : virtual public Car{
+public:
+    Bus();
+    void setCompany(std::string) override;
+    void setModel(std::string) override;
 };
-
-
-
-
