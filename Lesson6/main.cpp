@@ -22,9 +22,20 @@ void getInt(){
     }
 }
 
+//Task 2
+
+std::ostream &endll(std::ostream &os){
+    os << "\n\n" << std::flush;
+    return os;
+}
+
 int main(){
     // Task 1
-    getInt();
+    //getInt();
+
+    //Task 2
+    std::cout << "first line" << endll;
+    std::cout << "second line";
 
     return 0;
 }
