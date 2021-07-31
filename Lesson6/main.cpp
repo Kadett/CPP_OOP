@@ -31,7 +31,7 @@ std::ostream &endll(std::ostream &os){
 
 int main(){
     // Task 1
-    //getInt();
+    getInt();
 
     //Task 2
     std::cout << "first line" << endll;
