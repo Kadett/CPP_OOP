@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(CPP_OOP)
+project(Lesson7)
 
 set(CMAKE_CXX_STANDARD 17)
-
-add_subdirectory(Lesson7)
+add_executable(Lesson7 main.cpp Date.cpp Date.h)
