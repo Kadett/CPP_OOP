@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Bar.h"
 // Task 1
 template<typename T>
 void div(T numerator, T denominator){
@@ -15,5 +16,27 @@ int main(){
         std::cerr << "Exception: " << e.what() << std::endl;
     }
 
+
+    // Task 2
+    Bar b;
+    int n;
+    try {
+        while (true){
+            std::cout << "Enter 0 for exit.\n";
+            std::cout << "Enter any number:\n";
+            std::cin >> n;
+            if (n == 0) break;
+            b.set(n);
+        }
+
+    } catch (Ex &e) {
+
+        std::cerr << "Exception:\n";
+        std::cerr << "result = " << e.getX() << std::endl;
+        std::cout << std::endl;
+    }
+    std::cout << "Goodbye :)";
+
+    
     return 0;
 }
